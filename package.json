@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "cypress": "^10.4.0",
+    "cypress-mochawesome-reporter": "^3.2.0",
+    "cypress-xpath": "^2.0.1",
+    "mochawesome": "^7.1.3"
+  },
+  "scripts": {
+    "test": "test",
+    "cypress:open": "cypress open",
+    "cy:run:chrome": "cypress run -b chrome",
+    "cy:run:firefox": "cypress run -b firefox",
+    "cy:run:firefox:amazonTests": "cypress run -b firefox --spec 'cypress/e2e/qaChallengeAmazon/AmazonChallengeHome.cy.js'",
+    "cy:run:chrome:amazonTests": "cypress run -b chrome --spec 'cypress/e2e/qaChallengeAmazon/AmazonChallengeHome.cy.js'"
+  }
+}
